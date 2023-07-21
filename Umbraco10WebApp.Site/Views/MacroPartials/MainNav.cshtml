@@ -1,0 +1,35 @@
+﻿@using Umbraco.Cms.Web
+@inherits Umbraco.Cms.Web.Common.Macros.PartialViewMacroPage
+@*
+    This snippet displays a list of links of the pages immediately under the top-most page in the content tree.
+*@
+
+@{
+    if (Model != null)
+    {
+        var naviLevel = Model.Content.AncestorOrSelf(1);
+        var selection = naviLevel?.Children?.Where(x => x.IsVisible()).ToArray();
+        @if (selection?.Length > 0)
+        {
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+
+                    @foreach (var item in selection)
+                    {
+                        <li> <a class="@(item.IsAncestorOrSelf(Model.Content) ? "active" : null) nav-link scrollto" href="@item.UrlSegment">@item.Name</a></li>
+                    }
+                    <li>
+                        <form action="/search" role="search" method="Get">
+                            <input type="text" class="form-field search-box" placeholder="Search..." id="q" name="q" />
+                            <input class="btn" type="submit" value="Search" />
+                        </form>
+                    </li>
+                </ul>
+
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+        }
+
+        <!-- .navbar -->
+    }
+} 

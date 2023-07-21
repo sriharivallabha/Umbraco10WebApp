@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "4PZzQ+wQi2CxeCzM8iFf7vuKgb/8CamNIHoIqdNHoAg=",
+  "Source": "Umbraco10WebApp.API",
+  "BasePath": "_content/Umbraco10WebApp.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

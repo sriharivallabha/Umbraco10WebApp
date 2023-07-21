@@ -1,0 +1,12 @@
+D:\1Jobs\jobs\Umbraco10\Umbraco10WebApp\Umbraco10WebApp.Data\bin\Debug\netcoreapp3.0\Umbraco10WebApp.Data.deps.json
+D:\1Jobs\jobs\Umbraco10\Umbraco10WebApp\Umbraco10WebApp.Data\bin\Debug\netcoreapp3.0\Umbraco10WebApp.Data.dll
+D:\1Jobs\jobs\Umbraco10\Umbraco10WebApp\Umbraco10WebApp.Data\bin\Debug\netcoreapp3.0\ref\Umbraco10WebApp.Data.dll
+D:\1Jobs\jobs\Umbraco10\Umbraco10WebApp\Umbraco10WebApp.Data\bin\Debug\netcoreapp3.0\Umbraco10WebApp.Data.pdb
+D:\1Jobs\jobs\Umbraco10\Umbraco10WebApp\Umbraco10WebApp.Data\obj\Debug\netcoreapp3.0\Umbraco10WebApp.Data.csproj.AssemblyReference.cache
+D:\1Jobs\jobs\Umbraco10\Umbraco10WebApp\Umbraco10WebApp.Data\obj\Debug\netcoreapp3.0\Umbraco10WebApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\1Jobs\jobs\Umbraco10\Umbraco10WebApp\Umbraco10WebApp.Data\obj\Debug\netcoreapp3.0\Umbraco10WebApp.Data.AssemblyInfoInputs.cache
+D:\1Jobs\jobs\Umbraco10\Umbraco10WebApp\Umbraco10WebApp.Data\obj\Debug\netcoreapp3.0\Umbraco10WebApp.Data.AssemblyInfo.cs
+D:\1Jobs\jobs\Umbraco10\Umbraco10WebApp\Umbraco10WebApp.Data\obj\Debug\netcoreapp3.0\Umbraco10WebApp.Data.csproj.CoreCompileInputs.cache
+D:\1Jobs\jobs\Umbraco10\Umbraco10WebApp\Umbraco10WebApp.Data\obj\Debug\netcoreapp3.0\Umbraco10WebApp.Data.dll
+D:\1Jobs\jobs\Umbraco10\Umbraco10WebApp\Umbraco10WebApp.Data\obj\Debug\netcoreapp3.0\ref\Umbraco10WebApp.Data.dll
+D:\1Jobs\jobs\Umbraco10\Umbraco10WebApp\Umbraco10WebApp.Data\obj\Debug\netcoreapp3.0\Umbraco10WebApp.Data.pdb

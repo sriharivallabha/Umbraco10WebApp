@@ -1,0 +1,81 @@
+﻿@using Newtonsoft.Json
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco10WebApp.API;
+@using Umbraco10WebApp.Data.Models;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<RestApi>
+@using ContentModels = Umbraco10WebApp.Data.Models;
+@using Umbraco10WebApp.Site.Models
+@using System.Net.Http
+@{
+    Layout = "_Layout.cshtml";
+
+    if (Model != null)
+    {
+        @await Html.PartialAsync("HeroBanner", Model)
+
+
+        <section id="services" class="services section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Rest API</h2>
+                </div>
+
+
+                @{
+
+                    using (var client = new HttpClient())
+                    {
+                        try
+                        {
+                            client.BaseAddress = new Uri("https://api.spaceflightnewsapi.net/");
+                            var response = await client.GetAsync($"v3/articles");
+                            response.EnsureSuccessStatusCode();
+
+                            var stringResult = await response.Content.ReadAsStringAsync();
+                            var newsResult = JsonConvert.DeserializeObject<List<SpaceNews>>(stringResult);
+
+                            @foreach(var newsItem in newsResult.ToList())
+                            {
+                                var newscontent = new SpaceNewsItem
+                            {
+                                Id = newsItem.Id,
+                                Title = newsItem.Title,
+                                Url = newsItem.Url,
+                                ImageUrl = newsItem.ImageUrl,
+                                NewsSite = newsItem.NewsSite,
+                                Summary = newsItem.Summary,
+                                PublishedAt = newsItem.PublishedAt,
+                                UpdatedAt = newsItem.UpdatedAt,
+                                Featured = newsItem.Featured,
+                                Launches = newsItem.Launches,
+                                Events = newsItem.Events
+
+                            };
+                                <div class="row">
+                                <div class="col-md-3 mt-4">
+                                    <img src="@newsItem.ImageUrl" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-9 mt-4">
+                                    <div class="icon-box">
+                                        <h3><a href="@newsItem.Url">@newsItem.Title</a></h3>
+                                        <p>@newsItem.Summary</p>
+                                        <a href="@newsItem.Url" class="btn-get-started btn">@newsItem.NewsSite</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            }
+                            
+                        }
+
+                        catch (HttpRequestException httpRequestException)
+                        {
+                            <p> httpRequestException.Message; </p>
+                        }
+                    }
+                }
+            </div>
+        </section>
+    }
+}
+

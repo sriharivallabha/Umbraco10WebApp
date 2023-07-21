@@ -1,0 +1,15 @@
+﻿@using Newtonsoft.Json
+@using Umbraco10WebApp.Data.Models;
+@using Umbraco10WebApp.API.Controllers
+
+
+@if (Model != null)
+{
+    var backgroundImage = Model.BannerImage;
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" style="background: url('@backgroundImage?.LocalCrops.Src') center center; background-size:cover" class="d-flex flex-column justify-content-center align-items-center">
+        
+    </section>
+
+    <!-- End Hero -->
+}

@@ -1,0 +1,20 @@
+﻿@using Umbraco10WebApp.Data.Models;
+
+@if (Model != null)
+{    
+    var backgroundImage = Model.BannerImage;
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" style="background: url('@backgroundImage?.LocalCrops.Src') center center; background-size:cover" class="d-flex flex-column justify-content-center align-items-center">
+        @if (Model.ContentType.Alias == "master")
+        {
+            <div class="container text-center text-md-left" data-aos="fade-up">
+                <h1>@Model.BannerTitle</h1>
+                <h2>@Model.BannerDescription</h2>
+
+            </div>
+        }
+
+    </section>
+
+    <!-- End Hero -->
+}

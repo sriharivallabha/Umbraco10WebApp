@@ -1,0 +1,22 @@
+﻿@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models.Blocks;
+
+ @{
+    var blockItem = Model.Content;
+    var blockImageUrl = blockItem.NewsImage.LocalCrops.Src;
+    var blockUrl = blockItem.NewsLink[0].Url;
+    var blockUrlName = blockItem.NewsLink[0].Name;
+
+    <div class="row">
+            <div class="col-md-3 mt-4">
+                <img src="@blockImageUrl" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-9 mt-4">
+                <div class="icon-box">                    
+                    <h3><a href="#">@blockItem.NewsTitle</a></h3>
+                    <p>@blockItem.NewsDescription</p>
+                    <a href="@blockUrl" class="btn-get-started btn">@blockUrlName</a>
+                </div>
+            </div> 
+        </div>
+}

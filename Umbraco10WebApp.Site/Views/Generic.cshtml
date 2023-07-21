@@ -1,0 +1,27 @@
+﻿@using Umbraco10WebApp.Data.Models;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Generic>
+
+@{
+    Layout = "_Layout.cshtml";
+
+    if (Model != null)
+    {
+        @await Html.PartialAsync("HeroBanner", Model)
+     
+
+        <section id="services" class="services section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Generic Page</h2>
+                </div>
+                @if(Model.NewsFeatures != null)
+                {
+                   @Html.GetBlockListHtml(Model.NewsFeatures) 
+                }
+                 
+                   
+            </div>
+        </section>
+    }
+}
+

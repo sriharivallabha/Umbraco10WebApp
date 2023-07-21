@@ -1,0 +1,12 @@
+﻿@using Umbraco10WebApp.Data.Models;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Master>
+
+@{
+    Layout = "_Layout.cshtml";
+
+    if (Model != null)
+    {
+        @await Html.PartialAsync("HeroBanner", Model)
+
+    }
+}

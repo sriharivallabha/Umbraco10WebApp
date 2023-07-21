@@ -1,0 +1,24 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco10WebApp.Data.Models;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Search>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
+@{
+    Layout = "_Layout.cshtml";
+    if (Model != null)
+    {
+        @await Html.PartialAsync("HeroBanner", Model)
+        string searchTerm = string.Empty;
+
+
+        string qSearchTerm = Context?.Request?.Query["q"].ToString();
+        string querySearchTerm = Context?.Request?.Query["query"].ToString();
+
+        if (!string.IsNullOrWhiteSpace(qSearchTerm)) searchTerm = qSearchTerm;
+        if (!string.IsNullOrWhiteSpace(querySearchTerm)) searchTerm = querySearchTerm;
+
+        <partial name="Search/_UmbracoSearch" model="(searchTerm,Umbraco)" />
+
+
+    }
+}

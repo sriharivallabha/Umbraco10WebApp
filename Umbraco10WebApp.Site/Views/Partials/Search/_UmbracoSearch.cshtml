@@ -1,0 +1,57 @@
+﻿@using Examine;
+@using Umbraco.Cms.Web.Common;
+@inject IExamineManager ExaminManager;
+
+@model (string searchTerm, UmbracoHelper Umbraco)
+<section id="services" class="services section-bg">
+    <div class="container">
+
+
+        @if (ExaminManager.TryGetIndex("ExternalIndex", out var index))
+        {
+            var results = index.Searcher.Search(Model.searchTerm);
+            <!-- ======= Search Section ======= -->
+
+
+            <div class="section-title">
+                <h2>Search Results Page</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mt-6">
+                    <partial name="Search/_SearchBox" model="Model.searchTerm" />
+                </div>
+            </div>
+            @if (results?.Any() ?? false)
+            {
+                <div class="section-title">
+                    <p>Results Found @results.Count()</p>
+                </div>
+
+
+                @foreach (var result in results)
+                {
+                    var content = Model.Umbraco.Content(result.Id);
+                    <div class="row">
+                        <div class="col-md-12 mt-6">
+                            <div class="icon-box">
+                                <h4><a href="@content?.Url()">@content?.Name</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="row">
+                    <div class="col-md-12 mt-6">
+                        <div class="icon-box" style="margin-top:30px;">
+                            <h4>No results found</h4>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+        }
+    </div>
+</section>

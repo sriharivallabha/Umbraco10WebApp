@@ -1,0 +1,28 @@
+﻿@using Umbraco10WebApp.Data.Models;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Contact>
+@{
+    Layout = "_Layout.cshtml";
+
+    if (Model != null)
+    {
+        @await Html.PartialAsync("HeroBanner", Model)
+
+
+        <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>          
+        </div> 
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-10">          
+          @Html.Raw(Model.ContactForm)
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+    }
+}
