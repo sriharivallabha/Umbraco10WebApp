@@ -5,7 +5,105 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="umbraco\Data\TEMP\InMemoryAuto\all.generated.cs" />
+    <Compile Include="umbraco\Data\TEMP\InMemoryAuto\models.generated.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="umbraco\Data\TEMP\DistCache\66f12f4ab12880613430f2508f01c85d591d1309-lastsynced.txt" />
+    <Content Include="umbraco\Data\TEMP\DistCache\db0c01b248286b89d9e9caf5e46a892f3bd6f6e7-lastsynced.txt" />
+    <Content Include="umbraco\Data\TEMP\MediaCache\1\1\6\9\2\0\7\7\2ec6.jpg" />
+    <Content Include="umbraco\Data\TEMP\MediaCache\4\6\c\5\2\8\6\8\5ec2.jpg" />
+    <Content Include="umbraco\Data\TEMP\MediaCache\4\b\7\2\0\2\d\7\06a4.jpg" />
+    <Content Include="umbraco\Data\TEMP\MediaCache\7\9\b\f\d\5\0\0\df6f.jpg" />
+    <Content Include="umbraco\Data\TEMP\MediaCache\7\b\4\1\4\8\4\0\aa3f.jpg" />
+    <Content Include="umbraco\Data\TEMP\MediaCache\9\9\5\c\d\7\3\3\e014.jpg" />
+    <Content Include="umbraco\Data\TEMP\MediaCache\9\a\9\c\8\1\b\e\1ed0.jpg" />
+    <Content Include="umbraco\Data\TEMP\MediaCache\9\f\5\e\a\a\e\e\37d8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Umbraco10WebApp.Site.sln" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\segments.gen" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\segments_2w" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\write.lock" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_1m.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_1m.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_1m.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_28.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_28.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_28.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_2k.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_2k.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_2k.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_2l.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_2l.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_2l.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_2o.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_2o.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_2o.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_3.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_3.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_3.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_c.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_c.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\ExternalIndex\_c.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\segments.gen" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\segments_2y" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\write.lock" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_1p.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_1p.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_1p.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_1p_1.del" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_1q.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_1q.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_1q.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2c.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2c.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2c.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2o.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2o.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2o.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2p.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2p.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2p.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2q.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2q.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2q.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2t.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2t.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_2t.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_6.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_6.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_6.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_f.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_f.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\InternalIndex\_f.si" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\MembersIndex\segments.gen" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\MembersIndex\segments_19" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\MembersIndex\write.lock" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\UmbracoFormsRecordsIndex\segments.gen" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\UmbracoFormsRecordsIndex\segments_4" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\UmbracoFormsRecordsIndex\write.lock" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\UmbracoFormsRecordsIndex\_0.cfe" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\UmbracoFormsRecordsIndex\_0.cfs" />
+    <None Include="umbraco\Data\TEMP\ExamineIndexes\UmbracoFormsRecordsIndex\_0.si" />
+    <None Include="umbraco\Data\TEMP\InMemoryAuto\all.dll.path" />
+    <None Include="umbraco\Data\TEMP\InMemoryAuto\Compiled\generated.cs3bdb6ec1e18d5d406ab0a777d9a5ad77577625dd.dll" />
+    <None Include="umbraco\Data\TEMP\InMemoryAuto\models.hash" />
+    <None Include="umbraco\Data\TEMP\MainDom_40ec1cef099d59520420e28e4b50ac77aa30d005.lock" />
+    <None Include="umbraco\Data\TEMP\MainDom_6ec59b97eb3f39379286103c4c292d991612c6d5.lock" />
+    <None Include="umbraco\Data\TEMP\MediaCache\1\1\6\9\2\0\7\7\2ec6.meta" />
+    <None Include="umbraco\Data\TEMP\MediaCache\4\6\c\5\2\8\6\8\5ec2.meta" />
+    <None Include="umbraco\Data\TEMP\MediaCache\4\b\7\2\0\2\d\7\06a4.meta" />
+    <None Include="umbraco\Data\TEMP\MediaCache\7\9\b\f\d\5\0\0\df6f.meta" />
+    <None Include="umbraco\Data\TEMP\MediaCache\7\b\4\1\4\8\4\0\aa3f.meta" />
+    <None Include="umbraco\Data\TEMP\MediaCache\9\9\5\c\d\7\3\3\e014.meta" />
+    <None Include="umbraco\Data\TEMP\MediaCache\9\a\9\c\8\1\b\e\1ed0.meta" />
+    <None Include="umbraco\Data\TEMP\MediaCache\9\f\5\e\a\a\e\e\37d8.meta" />
+    <None Include="umbraco\Data\TEMP\NuCache\NuCache.Content.db" />
+    <None Include="umbraco\Data\TEMP\NuCache\NuCache.Media.db" />
+    <None Include="umbraco\Data\Umbraco.sqlite.db" />
+    <None Include="umbraco\Data\Umbraco.sqlite.db-shm" />
+    <None Include="umbraco\Data\Umbraco.sqlite.db-wal" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +118,8 @@
     <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="68.2.0.9" Condition="$(RuntimeIdentifier.StartsWith('linux')) or $(RuntimeIdentifier.StartsWith('win')) or ('$(RuntimeIdentifier)' == '' and !$([MSBuild]::IsOSPlatform('osx')))" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="umbraco\Data\TEMP\FileUploads\" />
+    <Folder Include="umbraco\Data\TEMP\Install\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <ItemGroup>
